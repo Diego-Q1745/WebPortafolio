@@ -1,0 +1,94 @@
+.aurora {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 77% 14%, var(--accent-glow), transparent 33%),
+    radial-gradient(ellipse at 12% 66%, var(--portada-2), transparent 43%);
+  opacity: .28;
+  pointer-events: none;
+}
+
+/* La elevación y la entrada usan propiedades distintas. */
+.realce, .aparece {
+  transition:
+    transform var(--duracion) var(--curva),
+    box-shadow var(--duracion) var(--curva),
+    background-color var(--duracion) var(--curva),
+    color var(--duracion) var(--curva),
+    opacity var(--duracion) var(--curva),
+    translate var(--duracion) var(--curva);
+}
+
+.realce {
+  --sombra-realce:
+    0 0 0 1px var(--borde-relieve),
+    0 10px 32px var(--sombra),
+    0 0 28px var(--accent-glow),
+    inset 0 1px 0 var(--borde-relieve);
+}
+
+@media (hover: hover) {
+  .realce:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--sombra-realce);
+  }
+}
+
+.realce:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: var(--sombra-realce);
+}
+
+.aparece.pendiente {
+  translate: 0 40px;
+  opacity: 0;
+}
+
+.aparece:not(.pendiente):not(:focus-within) { transition-delay: 0ms, 0ms, 0ms, 0ms, var(--pausa-entrada, 0ms), var(--pausa-entrada, 0ms); }
+
+@supports (background-clip: text) {
+  .titulo-seccion.con-degradado {
+    background-image: linear-gradient(105deg, var(--tx) 24%, var(--accent) 48%, var(--tx) 74%);
+    background-size: 225% 100%;
+    background-clip: text;
+    color: transparent;
+    animation: luz-titulo 7s ease-in-out infinite alternate paused;
+  }
+
+  .titulo-seccion.en-pantalla { animation-play-state: running; }
+}
+
+@keyframes luz-titulo {
+  from { background-position: 100% 50%; }
+  to { background-position: 0 50%; }
+}
+
+.modal[open] { animation: abrir-modal var(--duracion) var(--curva) both; }
+
+@keyframes abrir-modal {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .realce, .aparece {
+    transition-property: box-shadow, background-color, color, opacity;
+    translate: none;
+  }
+  .realce:hover, .realce:focus-visible { transform: none; }
+  .aparece.pendiente { translate: none; opacity: 1; }
+  .titulo-seccion.con-degradado { animation: none; }
+  .modal[open] { animation: fundir-modal var(--duracion) var(--curva) both; }
+}
+
+@media (forced-colors: active) {
+  .titulo-seccion.con-degradado { background: none; color: CanvasText; }
+  .icono { background-color: ButtonText; forced-color-adjust: none; }
+}
+
+@keyframes fundir-modal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

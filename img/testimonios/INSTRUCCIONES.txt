@@ -1,0 +1,13 @@
+FOTOS PARA LA SECCIÓN DE TESTIMONIOS
+
+Coloca aquí las fotografías reales, preferentemente cuadradas y con permiso de cada persona:
+
+- companero.jpg: fotografía del compañero de clase.
+- companera.jpg: fotografía de la compañera de clase.
+- profesor-base-datos.jpg: fotografía del profesor de Base de Datos.
+
+Usa formato JPG o cambia la ruta en index.html si prefieres PNG o WEBP.
+Las imágenes se recortan automáticamente en forma circular.
+Si todavía no agregas una fotografía, la página muestra la inicial de la persona.
+
+Antes de publicar fotografías de otras personas, solicita su autorización.

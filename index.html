@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio de Diego, estudiante de Diseño y Desarrollo de Software en TECSUP.">
+  <meta name="theme-color" content="#0d1117">
+  <title>Diego | Portafolio personal</title>
+  <link rel="icon" href="img/marca.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/effects.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <div class="aurora" aria-hidden="true"></div>
+
+  <header class="cabecera">
+    <div class="contenedor cabecera-interior">
+      <a class="marca realce" href="#inicio" aria-label="Diego, inicio">
+        <img src="img/marca.png" alt="" width="34" height="34">
+        <span>Diego<span class="marca-punto">.</span></span>
+      </a>
+      <nav class="navegacion" aria-label="Menú principal">
+        <button class="menu-boton realce" type="button" aria-controls="menu-principal" aria-expanded="false" hidden>
+          <span class="icono icono-menu" aria-hidden="true"></span> <span>Menú</span>
+        </button>
+        <ul id="menu-principal" class="menu-lista">
+          <li><a class="menu-enlace realce" href="#inicio" aria-current="location">Inicio</a></li>
+          <li><a class="menu-enlace realce" href="#sobre-mi">Sobre mí</a></li>
+          <li><a class="menu-enlace realce" href="#servicios">Servicios</a></li>
+          <li><a class="menu-enlace realce" href="#portafolio">Portafolio</a></li>
+          <li><a class="menu-enlace realce" href="#testimonio">Testimonio</a></li>
+          <li><a class="menu-enlace realce" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <section id="inicio" class="contenedor inicio" aria-labelledby="nombre">
+      <div class="inicio-texto">
+        <p class="saludo">Hola, soy</p>
+        <h1 id="nombre">Diego<span class="nombre-punto" aria-hidden="true">.</span></h1>
+        <p class="inicio-descripcion">Estudio Diseño y Desarrollo de Software en TECSUP. Creo páginas web claras, fáciles de usar y que se ven bien en cualquier pantalla.</p>
+        <div class="inicio-acciones">
+          <a class="boton boton-principal realce" href="#portafolio">Ver mis trabajos</a>
+          <a class="boton boton-secundario realce" href="#contacto">Escríbeme</a>
+        </div>
+        <ul class="redes" aria-label="Redes y correo">
+          <li>
+            <a class="red realce" href="https://github.com/Diego-Q1745" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><span class="icono icono-github" aria-hidden="true"></span></a>
+          </li>
+          <li>
+            <a class="red realce" href="https://www.linkedin.com/in/diego-quispe-5551983ba/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="icono icono-linkedin" aria-hidden="true"></span></a>
+          </li>
+          <li>
+            <a class="red realce" href="mailto:diego.quispe.cc@tecsup.edu.pe" aria-label="Correo electrónico"><span class="icono icono-correo" aria-hidden="true"></span></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="retrato-composicion">
+        <div class="retrato-orbita orbita-exterior" aria-hidden="true"></div>
+        <div class="retrato-orbita orbita-interior" aria-hidden="true"></div>
+        <span class="retrato-estrella" aria-hidden="true"></span>
+        <span class="retrato-punto" aria-hidden="true"></span>
+        <div class="retrato">
+          <span class="retrato-inicial" aria-hidden="true">D</span>
+          <!-- Guarda tu foto como img/perfil.jpg; si no existe, se muestra la inicial. -->
+          <img class="retrato-foto" data-foto="img/perfil.jpg" alt="Retrato de Diego" width="256" height="256" hidden>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="contenedor seccion sobre-mi" aria-labelledby="titulo-sobre-mi">
+      <div class="seccion-intro" data-aparece>
+        <h2 id="titulo-sobre-mi" class="titulo-seccion">Sobre mí</h2>
+        <p>Soy Diego, estudiante de segundo ciclo de Diseño y Desarrollo de Software en TECSUP. Aprendo a crear páginas web y programas, y también estudio inglés. Me gusta resolver problemas con orden y lógica, y que lo que hago sea claro, útil y fácil de usar para cualquier persona.</p>
+      </div>
+      <div class="especialidades">
+          <article class="vidrio dato realce" data-aparece>
+            <p class="dato-etiqueta">Carrera</p>
+            <p class="dato-valor">Diseño y Desarrollo de Software</p>
+          </article>
+          <article class="vidrio dato realce" data-aparece>
+            <p class="dato-etiqueta">Ciclo</p>
+            <p class="dato-valor">2.º ciclo</p>
+          </article>
+          <article class="vidrio dato realce" data-aparece>
+            <p class="dato-etiqueta">Institución</p>
+            <p class="dato-valor">TECSUP</p>
+          </article>
+          <article class="vidrio dato realce" data-aparece>
+            <p class="dato-etiqueta">También estudio</p>
+            <p class="dato-valor">Inglés</p>
+          </article>
+      </div>
+    </section>
+
+    <section id="servicios" class="contenedor seccion" aria-labelledby="titulo-servicios">
+      <div class="seccion-intro" data-aparece>
+        <h2 id="titulo-servicios" class="titulo-seccion">Lo que puedo hacer por ti</h2>
+      </div>
+      <div class="servicios">
+          <article class="vidrio tarjeta-estudio realce" data-aparece>
+            <span class="ficha-icono"><span class="icono icono-web" aria-hidden="true"></span></span>
+            <h3>Páginas web</h3>
+            <p>Sitios que se ven bien en celular y en computadora.</p>
+          </article>
+          <article class="vidrio tarjeta-estudio realce" data-aparece>
+            <span class="ficha-icono"><span class="icono icono-diseno" aria-hidden="true"></span></span>
+            <h3>Diseño de pantallas</h3>
+            <p>Planificar cómo se ve y cómo se usa una página antes de construirla.</p>
+          </article>
+          <article class="vidrio tarjeta-estudio realce" data-aparece>
+            <span class="ficha-icono"><span class="icono icono-programa" aria-hidden="true"></span></span>
+            <h3>Java y Python</h3>
+            <p>Desarrollo programas en Java y Python para resolver problemas y automatizar tareas.</p>
+          </article>
+          <article class="vidrio tarjeta-estudio realce" data-aparece>
+            <span class="ficha-icono"><span class="icono icono-datos" aria-hidden="true"></span></span>
+            <h3>Bases de datos</h3>
+            <p>Organizo la información en tablas para guardarla y encontrarla rápido.</p>
+          </article>
+          <article class="vidrio tarjeta-estudio realce" data-aparece>
+            <span class="ficha-icono"><span class="icono icono-publicar" aria-hidden="true"></span></span>
+            <h3>Publicar en internet</h3>
+            <p>Subo tu página a un servidor y la dejo funcionando con su propio enlace.</p>
+          </article>
+      </div>
+    </section>
+
+    <section id="portafolio" class="contenedor seccion" aria-labelledby="titulo-portafolio">
+      <div class="seccion-intro" data-aparece>
+        <h2 id="titulo-portafolio" class="titulo-seccion">Portafolio</h2>
+      </div>
+      <div class="proyectos">
+          <article class="vidrio proyecto realce" data-aparece>
+            <div class="portada portada-turismo" aria-hidden="true">
+              <span class="portada-icono"><span class="icono icono-turismo" aria-hidden="true"></span></span>
+            </div>
+            <div class="proyecto-texto">
+              <h3>Sitio web de turismo</h3>
+              <p>Una página para explorar destinos turísticos.</p>
+              <p class="proyecto-detalle" hidden>Proyecto de diseño web centrado en organizar información sobre destinos para que el visitante pueda explorarla con facilidad.</p>
+              <div class="acciones-proyecto">
+                <a class="boton boton-enlace realce" href="https://webviajesgo.free.je" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto: Sitio web de turismo">Ver proyecto</a>
+                <button class="boton boton-secundario realce" type="button" data-detalles aria-haspopup="dialog" aria-label="Detalles de Sitio web de turismo">Detalles</button>
+              </div>
+            </div>
+          </article>
+          <article class="vidrio proyecto realce" data-aparece>
+            <div class="portada portada-academia" aria-hidden="true">
+              <span class="portada-icono"><span class="icono icono-academia" aria-hidden="true"></span></span>
+            </div>
+            <div class="proyecto-texto">
+              <h3>Sitio Web de la Academia</h3>
+              <p>Página web que realicé de una academia.</p>
+              <p class="proyecto-detalle" hidden>Página web que realicé de una academia.</p>
+              <div class="acciones-proyecto">
+                <a class="boton boton-enlace realce" href="https://webacademia2.gt.tc" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto: Academia">Ver proyecto</a>
+                <button class="boton boton-secundario realce" type="button" data-detalles aria-haspopup="dialog" aria-label="Detalles de Academia">Detalles</button>
+              </div>
+            </div>
+          </article>
+          <article class="vidrio proyecto realce" data-aparece>
+            <div class="portada portada-studybot" aria-hidden="true">
+              <span class="portada-icono"><span class="icono icono-chat" aria-hidden="true"></span></span>
+            </div>
+            <div class="proyecto-texto">
+              <h3>StudyBot AI</h3>
+              <p>Bot inteligente para Discord desarrollado en Python e integrado con Gemini AI.</p>
+              <p class="proyecto-detalle" hidden>Bot para Discord desarrollado en Python. Permite responder consultas mediante Gemini AI, registrar tareas pendientes, consultar el historial de interacciones y guardar eventos y errores mediante un sistema de logs.</p>
+              <div class="acciones-proyecto">
+                <a class="boton boton-enlace realce" href="https://github.com/diego18qcc-ui/StudyBot-AI" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto: StudyBot AI en GitHub">Ver proyecto</a>
+                <button class="boton boton-secundario realce" type="button" data-detalles aria-haspopup="dialog" aria-label="Detalles de StudyBot AI">Detalles</button>
+              </div>
+            </div>
+          </article>
+          <article class="vidrio proyecto realce" data-aparece>
+            <div class="portada portada-fincontrol" aria-hidden="true">
+              <span class="portada-icono"><span class="simbolo-fincontrol" aria-hidden="true">S/</span></span>
+            </div>
+            <div class="proyecto-texto">
+              <h3>FINCONTROL</h3>
+              <p>Aplicación web para gestionar finanzas personales, ingresos, gastos y metas de ahorro.</p>
+              <p class="proyecto-detalle" hidden>Gestor de finanzas personales desarrollado con HTML5, CSS3 y JavaScript. Permite registrar ingresos y gastos, organizar presupuestos y establecer metas de ahorro. Utiliza LocalStorage para conservar la información en el navegador y trabaja con soles peruanos.</p>
+              <div class="acciones-proyecto">
+                <a class="boton boton-enlace realce" href="https://webfincontrol.site.je" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto: FINCONTROL">Ver proyecto</a>
+                <button class="boton boton-secundario realce" type="button" data-detalles aria-haspopup="dialog" aria-label="Detalles de FINCONTROL">Detalles</button>
+              </div>
+            </div>
+          </article>
+          <article class="vidrio proyecto realce" data-aparece>
+            <div class="portada portada-ecomarket" aria-hidden="true">
+              <span class="portada-icono"><span class="icono icono-datos" aria-hidden="true"></span></span>
+            </div>
+            <div class="proyecto-texto">
+              <h3>ECOMARKET</h3>
+              <p>Sistema de gestión para una tienda de productos ecológicos, desarrollado con Java y MySQL.</p>
+              <p class="proyecto-detalle" hidden>Aplicación de consola desarrollada con Java 17 y MySQL para gestionar una tienda de productos ecológicos. Aplica Programación Orientada a Objetos, arquitectura por capas, JDBC, PreparedStatement, CallableStatement y colecciones. Permite administrar clientes y productos, consultar categorías, registrar ventas, validar y actualizar el stock, y consultar reportes de inventario y ventas.</p>
+              <div class="acciones-proyecto">
+                <a class="boton boton-enlace realce" href="https://github.com/Diego-Q1745/Ecomarket-Java" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto: ECOMARKET en GitHub">Ver proyecto</a>
+                <button class="boton boton-secundario realce" type="button" data-detalles aria-haspopup="dialog" aria-label="Detalles de ECOMARKET">Detalles</button>
+              </div>
+            </div>
+          </article>
+          <article class="vidrio proyecto realce" data-aparece>
+            <div class="portada portada-clinisys" aria-hidden="true">
+              <span class="portada-icono"><span class="icono icono-clinica" aria-hidden="true"></span></span>
+            </div>
+            <div class="proyecto-texto">
+              <h3>CLINISYS</h3>
+              <p>Sistema web de gestión clínica desarrollado con PHP y MySQL.</p>
+              <p class="proyecto-detalle" hidden>Sistema de gestión para una clínica desarrollado con PHP, MySQL, HTML, CSS y JavaScript. Incluye módulos para administrar pacientes, consultar médicos y sus múltiples especialidades, programar citas, registrar consultas y controlar pagos parciales, permitiendo varios abonos por cita. La base de datos cuenta con tablas relacionadas, vistas, triggers y consultas de reportes. Repositorio en preparación.</p>
+              <div class="acciones-proyecto">
+                <a class="boton boton-enlace realce" href="https://github.com/Diego-Q1745/Clynisis.git" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto: ECOMARKET en GitHub">Ver proyecto</a>
+                <button class="boton boton-secundario realce" type="button" data-detalles aria-haspopup="dialog" aria-label="Detalles de CLINISYS">Detalles</button>
+              </div>
+            </div>
+          </article>
+      </div>
+    </section>
+
+    <section id="testimonio" class="contenedor seccion" aria-labelledby="titulo-testimonio">
+      <div class="seccion-intro" data-aparece>
+        <h2 id="titulo-testimonio" class="titulo-seccion">Testimonio</h2>
+      </div>
+      <div class="testimonios">
+          <article class="vidrio testimonio realce" data-aparece>
+            <div class="testimonio-persona">
+              <div class="testimonio-avatar" aria-hidden="true">
+                <span class="avatar-inicial">C</span>
+                <img class="avatar-foto" data-foto="img/testimonios/companero.jpg" alt="" width="64" height="64" hidden>
+              </div>
+              <div class="testimonio-identidad">
+                <p class="testimonio-nombre">Jhon Blas</p>
+                <p class="testimonio-curso">Compañero de clase</p>
+              </div>
+            </div>
+            <span class="comillas" aria-hidden="true">“</span>
+            <blockquote>
+              <p>Trabajar con Diego en los proyectos ha sido una buena experiencia. Siempre busca soluciones cuando algo se complica y comparte sus ideas para que podamos avanzar como equipo.</p>
+            </blockquote>
+          </article>
+          <article class="vidrio testimonio realce" data-aparece>
+            <div class="testimonio-persona">
+              <div class="testimonio-avatar" aria-hidden="true">
+                <span class="avatar-inicial">C</span>
+                <img class="avatar-foto" data-foto="img/testimonios/companera.jpg" alt="" width="64" height="64" hidden>
+              </div>
+              <div class="testimonio-identidad">
+                <p class="testimonio-nombre">Norma Hernandez</p>
+                <p class="testimonio-curso">Compañera de clase</p>
+              </div>
+            </div>
+            <span class="comillas" aria-hidden="true">“</span>
+            <blockquote>
+              <p>Diego es responsable con sus trabajos y se nota que le gusta aprender. Cuando hacemos actividades en grupo, aporta ideas y está dispuesto a ayudar para que el resultado salga bien.</p>
+            </blockquote>
+          </article>
+          <article class="vidrio testimonio realce" data-aparece>
+            <div class="testimonio-persona">
+              <div class="testimonio-avatar" aria-hidden="true">
+                <span class="avatar-inicial">G</span>
+                <img class="avatar-foto" data-foto="img/testimonios/profesor-base-datos.jpg" alt="" width="64" height="64" hidden>
+              </div>
+              <div class="testimonio-identidad">
+                <p class="testimonio-nombre">Gonzalo Suárez</p>
+                <p class="testimonio-curso">Profesor · Base de datos</p>
+              </div>
+            </div>
+            <span class="comillas" aria-hidden="true">“</span>
+            <blockquote>
+              <p>Diego muestra responsabilidad y habilidad para diseñar y gestionar bases de datos, aplicando correctamente los conceptos de modelado, consultas y organización de la información.</p>
+            </blockquote>
+          </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="contenedor seccion contacto" aria-labelledby="titulo-contacto">
+      <div class="seccion-intro" data-aparece>
+        <h2 id="titulo-contacto" class="titulo-seccion">Contacto</h2>
+        <ul class="contacto-enlaces">
+          <li>
+            <a class="contacto-enlace realce" href="mailto:diego.quispe.cc@tecsup.edu.pe">
+              <span class="ficha-icono"><span class="icono icono-correo" aria-hidden="true"></span></span>
+              <span><strong>Correo electrónico</strong><span class="contacto-marcador">diego.quispe.cc@tecsup.edu.pe</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="contacto-enlace realce" href="https://github.com/Diego-Q1745" target="_blank" rel="noopener noreferrer">
+              <span class="ficha-icono"><span class="icono icono-github" aria-hidden="true"></span></span>
+              <span><strong>GitHub</strong><span class="contacto-marcador">github.com/Diego-Q1745</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="contacto-enlace realce" href="https://linkedin.com/in/diego-quispe-5551983ba" target="_blank" rel="noopener noreferrer">
+              <span class="ficha-icono"><span class="icono icono-linkedin" aria-hidden="true"></span></span>
+              <span><strong>LinkedIn</strong><span class="contacto-marcador">linkedin.com/in/diego-quispe-5551983ba</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="vidrio formulario" action="php/envio.php" method="POST" data-aparece>
+        <div class="trampa" aria-hidden="true">
+          <label for="web-extra">Déjalo vacío</label>
+          <input id="web-extra" name="web_extra" type="text" maxlength="100" tabindex="-1" autocomplete="off">
+        </div>
+        <p class="formulario-nota">Los campos con * son obligatorios.</p>
+        <div class="formulario-fila">
+          <div class="campo">
+            <label for="nombre-contacto">Nombre completo <span aria-hidden="true">*</span></label>
+            <input id="nombre-contacto" name="nombre" type="text" autocomplete="name" maxlength="100" required>
+          </div>
+          <div class="campo">
+            <label for="correo">Correo electrónico <span aria-hidden="true">*</span></label>
+            <input id="correo" name="correo" type="email" autocomplete="email" maxlength="150" required>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" name="telefono" type="tel" autocomplete="tel" maxlength="20">
+        </div>
+        <div class="campo">
+          <label for="consulta">Consulta <span aria-hidden="true">*</span></label>
+          <textarea id="consulta" name="consulta" rows="5" maxlength="3000" required></textarea>
+        </div>
+        <button class="boton boton-principal realce" type="submit">Enviar consulta</button>
+        <p id="estado-formulario" class="estado-formulario" role="status" aria-live="polite" aria-atomic="true"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie-interior">
+      <p>© 2026 Diego. Todos los derechos reservados.</p>
+      <a class="pie-enlace realce" href="https://github.com/Diego-Q1745" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><span class="icono icono-github" aria-hidden="true"></span> GitHub</a>
+    </div>
+  </footer>
+
+  <dialog id="modal-proyecto" class="vidrio modal" aria-labelledby="modal-titulo" aria-describedby="modal-detalle">
+    <div class="modal-cabecera">
+      <h2 id="modal-titulo"></h2>
+      <form method="dialog">
+        <button class="red realce" type="submit" aria-label="Cerrar detalles" autofocus><span class="icono icono-cerrar" aria-hidden="true"></span></button>
+      </form>
+    </div>
+    <p id="modal-detalle"></p>
+  </dialog>
+</body>
+</html>
